@@ -29,3 +29,13 @@ logger.setLevel(logging.DEBUG)
 #프로젝트 초기화 최초
 BWUser(username=USERNAME, password=PASSWORD, token_path="tokens.txt")
 project = BWProject(project=PROJECT_NAME, username=USERNAME, token_path="tokens.txt") 
+
+#queries number 기록
+queries = BWQueries(project)
+target_query_ids = [
+    2002871121, # 1. Nongshim
+    2002884240, # 2. Domestic Competitors
+    2002884267, # 3. Global Competitors
+    2003263471, # 4. 이벤트 쿼리 (국내 포함)
+    2003819111  # 5. Snack
+]
