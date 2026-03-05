@@ -25,3 +25,7 @@ print(f"PW: {PASSWORD}")
 
 logger = logging.getLogger("bcr_api")
 logger.setLevel(logging.DEBUG)
+
+#프로젝트 초기화 최초
+BWUser(username=USERNAME, password=PASSWORD, token_path="tokens.txt")
+project = BWProject(project=PROJECT_NAME, username=USERNAME, token_path="tokens.txt") 
