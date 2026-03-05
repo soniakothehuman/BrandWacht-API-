@@ -1,0 +1,134 @@
+#일본인 관광객 분석용 카테고리 등록
+#01 구분
+bulk_category_data = [
+    {"name": "(01) 결제 수단", "children": [
+        {"name": "와우패스", "rules": [{"filter": {"search": '"WOWPASS" OR "ワ우パス"'}}]},
+        {"name": "나마네카드", "rules": [{"filter": {"search": '"NAMANE" OR "ナマネカード"'}}]},
+        {"name": "트래블로그", "rules": [{"filter": {"search": '"トラベルログ" OR "TravelLog"'}}]}
+    ]},
+    {"name": "(02) 정보/이동", "children": [
+        {"name": "네이버 지도", "rules": [{"filter": {"search": '"ネイバーマップ" OR "Naver Map"'}}]},
+        {"name": "카카오택시", "rules": [{"filter": {"search": '"カカオタクシー" OR "配車アプリ"'}}]},
+        {"name": "eSIM/Wi-Fi", "rules": [{"filter": {"search": '"eSIM" OR "Wi-Fi弁当" OR "ポケットWi-Fi"'}}]}
+    ]},
+    {"name": "(03) 숙박 형태", "children": [
+        {"name": "호텔", "rules": [{"filter": {"search": '"ホテル" OR "HOTEL"'}}]},
+        {"name": "게스트하우스/민박", "rules": [{"filter": {"search": '"ゲストハウス" OR "民泊" OR "エアビー" OR "エアビーアンドビー"'}}]}
+    ]},
+    {"name": "(04) 대형 유통 및 편의점", "children": [
+        {"name": "롯데마트", "rules": [{"filter": {"search": '"ロッテマート" OR "Lotte Mart"'}}]},
+        {"name": "다이소", "rules": [{"filter": {"search": '"ダイソー" OR "韓国ダイソー"'}}]},
+        {"name": "면세점", "rules": [{"filter": {"search": '"免税店" OR "DUTY FREE"'}}]},
+        {"name": "이마트/코스트코", "rules": [{"filter": {"search": '"イーマート" OR "E-MART" OR "コストコ" OR "COSTCO"'}}]},
+        {"name": "편의점(CU/GS25/7-11)", "rules": [{"filter": {"search": '"コンビニ" OR "CU" OR "GS25" OR "セブンイレブン"'}}]}
+    ]},
+    {"name": "(05) H&B 스토어", "children": [
+        {"name": "올리브영", "rules": [{"filter": {"search": '"オリーブヤング" OR "オリヤン"'}}]}
+    ]},
+    {"name": "(06) 패션 브랜드", "children": [
+        {"name": "무신사", "rules": [{"filter": {"search": '"ムシンサ" OR "MUSINSA"'}}]},
+        {"name": "마르디 메크르디", "rules": [{"filter": {"search": '"マルディメクルディ" OR "Mardi Mercredi"'}}]}
+    ]},
+    {"name": "(07) 구체적 메뉴", "children": [
+        {"name": "간장게장", "rules": [{"filter": {"search": '"カンジャンケジャン"'}}]},
+        {"name": "닭한마리", "rules": [{"filter": {"search": '"タッカンマリ"'}}]},
+        {"name": "삼겹살", "rules": [{"filter": {"search": '"サムギョプサル"'}}]},
+        {"name": "신라면", "rules": [{"filter": {"search": '"辛ラーメン"'}}]},
+        {"name": "불닭볶음면", "rules": [{"filter": {"search": '"ブル다ック" OR "プル다ック"'}}]},
+        {"name": "참깨라면", "rules": [{"filter": {"search": '"ごまラーメン"'}}]},
+        {"name": "미역라면", "rules": [{"filter": {"search": '"ワカメラーメン"'}}]}
+    ]},
+    {"name": "(08) 인스턴트/가공식품", "children": [
+        {"name": "비요뜨", "rules": [{"filter": {"search": '"ビヨット"'}}]},
+        {"name": "라면", "rules": [{"filter": {"search": '"韓国ラーメン" OR "辛ラーメン" OR "ブルダック"'}}]},
+        {"name": "HBAF/김", "rules": [{"filter": {"search": '"HBAF" OR "アーモンド" OR "韓国海苔"'}}]}
+    ]},
+    {"name": "(09) 카페 문화", "children": [
+        {"name": "카페 투어", "rules": [{"filter": {"search": '"カフェ巡り" OR "韓国カフェ"'}}]},
+        {"name": "편의점 디저트", "rules": [{"filter": {"search": '"コンビニスイーツ" OR "韓国コンビニ"'}}]}
+    ]},
+    {"name": "(10) 의료 서비스", "children": [
+        {"name": "피부과", "rules": [{"filter": {"search": '"皮膚科" OR "ポテンツァ" OR "リジュラン"'}}]},
+        {"name": "미용외과", "rules": [{"filter": {"search": '"美容外科" OR "整形"'}}]},
+        {"name": "피부 진단/퍼스널 컬러", "rules": [{"filter": {"search": '"肌診断" OR "パーソナルカラー" OR "肌測定"'}}]},
+        {"name": "치아 미백", "rules": [{"filter": {"search": '"ホワイトニング"'}}]}
+    ]},
+    {"name": "(11) 전문 케어", "children": [
+        {"name": "헤드스파", "rules": [{"filter": {"search": '"ヘッドスパ"'}}]},
+        {"name": "반영구/에스테틱", "rules": [{"filter": {"search": '"アートメイク" OR "眉アート" OR "エステ"'}}]}
+    ]},
+    {"name": "(12) 기록분석 (기록 문화)", "children": [
+        {"name": "인생네컷", "rules": [{"filter": {"search": '"人生4カット"'}}]},
+        {"name": "셀프 사진관", "rules": [{"filter": {"search": '"セルフ写真館"'}}]},
+        {"name": "프로필 사진", "rules": [{"filter": {"search": '"プロフィール写真" OR "証明写真"'}}]}
+    ]},
+    {"name": "(13) 팬덤 활동", "children": [
+        {"name": "성지순례", "rules": [{"filter": {"search": '"聖地巡礼" OR "ロケ地"'}}]},
+        {"name": "덕질", "rules": [{"filter": {"search": '"推し活" OR "オタ活"'}}]},
+        {"name": "콘서트", "rules": [{"filter": {"search": '"コンサート" OR "ライブ"'}}]}
+    ]},
+    {"name": "(14) 문화 체험", "children": [
+        {"name": "한복 체험", "rules": [{"filter": {"search": '"韓服" OR "チ마チョゴリ"'}}]},
+        {"name": "전통시장", "rules": [{"filter": {"search": '"伝統市場" OR "広蔵市場"'}}]},
+        {"name": "박물관/전시관", "rules": [{"filter": {"search": '"博物館" OR "美術館" OR "展示会"'}}]}
+    ]}
+]
+
+#02 위치
+location_category_data = [
+  {
+    "category": "(12) 서울 주요 지역",
+    "items": [
+      {"name": "성수", "rules": [{"filter": {"search": "\"聖水\" OR \"ソンス\""}}]},
+      {"name": "인사동", "rules": [{"filter": {"search": "\"仁寺洞\" OR \"インサドン\""}}]},
+      {"name": "스타필드", "rules": [{"filter": {"search": "\"スターフィールド\" OR \"Starfield\""}}]},
+      {"name": "익선", "rules": [{"filter": {"search": "\"益善\" OR \"イクソン\""}}]},
+      {"name": "북촌/서촌", "rules": [{"filter": {"search": "\"北村\" OR \"西村\" OR \"プッチョン\" OR \"ソチョン\""}}]},
+      {"name": "동대문/DDP", "rules": [{"filter": {"search": "\"東大門\" OR \"トンデムン\" OR \"DDP\" OR \"ディーディーピー\""}}]},
+      {"name": "서울숲", "rules": [{"filter": {"search": "\"ソウルの森\" OR \"ソウルスプ\""}}]},
+      {"name": "남산", "rules": [{"filter": {"search": "\"南山\" OR \"ナムサン\""}}]},
+      {"name": "한강", "rules": [{"filter": {"search": "\"漢江\" OR \"ハンガン\""}}]},
+      {"name": "강남", "rules": [{"filter": {"search": "\"江南\" OR \"カンナム\""}}]},
+      {"name": "광장시장", "rules": [{"filter": {"search": "\"広蔵市場\" OR \"クァンジャンシジャン\""}}]},
+      {"name": "홍대", "rules": [{"filter": {"search": "\"弘大\" OR \"ホンデ\""}}]},
+      {"name": "잠실", "rules": [{"filter": {"search": "\"蚕室\" OR \"チャムシル\""}}]},
+      {"name": "연남", "rules": [{"filter": {"search": "\"延南\" OR \"ヨンナム\""}}]},
+      {"name": "명동", "rules": [{"filter": {"search": "\"明洞\" OR \"ミョンドン\""}}]},
+      {"name": "이태원", "rules": [{"filter": {"search": "\"梨泰院\" OR \"イテウォン\""}}]},
+      {"name": "압구정", "rules": [{"filter": {"search": "\"狎鴎亭\" OR \"アックジョン\""}}]},
+      {"name": "을지로", "rules": [{"filter": {"search": "\"乙支路\" OR \"ウルチロ\""}}]}
+    ]
+  },
+  {
+    "category": "(13) 부산 주요 지역",
+    "items": [
+      {"name": "해운대", "rules": [{"filter": {"search": "\"海雲台\" OR \"ヘウンデ\""}}]},
+      {"name": "전포", "rules": [{"filter": {"search": "\"田浦\" OR \"ジョン포\""}}]},
+      {"name": "광안리", "rules": [{"filter": {"search": "\"広安里\" OR \"クァンアンリ\""}}]},
+      {"name": "감천", "rules": [{"filter": {"search": "\"甘川\" OR \"カムチョン\""}}]},
+      {"name": "서면", "rules": [{"filter": {"search": "\"西面\" OR \"ソミョン\""}}]},
+      {"name": "자갈치", "rules": [{"filter": {"search": "\"チャガルチ\" OR \"Jagalchi\""}}]},
+      {"name": "BIFF", "rules": [{"filter": {"search": "\"BIFF\" OR \"ビフ\" OR \"釜山国際映画祭\""}}]},
+      {"name": "기장", "rules": [{"filter": {"search": "\"機張\" OR \"キジャン\""}}]},
+      {"name": "센텀시티", "rules": [{"filter": {"search": "\"センタムシティ\" OR \"Centum City\""}}]},
+      {"name": "남포동", "rules": [{"filter": {"search": "\"南浦洞\" OR \"ナンポドン\""}}]},
+      {"name": "영도", "rules": [{"filter": {"search": "\"影島\" OR \"ヨンド\""}}]}
+    ]
+  },
+  {
+    "category": "(14) 기타 주요 도시",
+    "items": [
+      {"name": "경주", "rules": [{"filter": {"search": "\"慶州\" OR \"キョンジュ\""}}]},
+      {"name": "수원", "rules": [{"filter": {"search": "\"水原\" OR \"スウォン\""}}]},
+      {"name": "전주", "rules": [{"filter": {"search": "\"全州\" OR \"チョンジュ\""}}]},
+      {"name": "제주", "rules": [{"filter": {"search": "\"済州\" OR \"チェジュ\""}}]},
+      {"name": "속초", "rules": [{"filter": {"search": "\"束草\" OR \"ソクチョ\""}}]}
+    ]
+  }
+]
+
+
+
+#등록
+for data in bulk_category_data:
+    categories.upload_rule_categories(**data)
