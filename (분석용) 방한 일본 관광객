@@ -77,53 +77,65 @@ bulk_category_data = [
 #02 위치
 location_category_data = [
   {
-    "category": "(12) 서울 주요 지역",
+    "category": "(분석용) 서울 주요 지역",
     "items": [
-      {"name": "성수", "rules": [{"filter": {"search": "\"聖水\" OR \"ソンス\""}}]},
-      {"name": "인사동", "rules": [{"filter": {"search": "\"仁寺洞\" OR \"インサドン\""}}]},
-      {"name": "스타필드", "rules": [{"filter": {"search": "\"スターフィールド\" OR \"Starfield\""}}]},
-      {"name": "익선", "rules": [{"filter": {"search": "\"益善\" OR \"イクソン\""}}]},
-      {"name": "북촌/서촌", "rules": [{"filter": {"search": "\"北村\" OR \"西村\" OR \"プッチョン\" OR \"ソチョン\""}}]},
-      {"name": "동대문/DDP", "rules": [{"filter": {"search": "\"東大門\" OR \"トンデムン\" OR \"DDP\" OR \"ディーディーピー\""}}]},
-      {"name": "서울숲", "rules": [{"filter": {"search": "\"ソウルの森\" OR \"ソウルスプ\""}}]},
-      {"name": "남산", "rules": [{"filter": {"search": "\"南山\" OR \"ナムサン\""}}]},
-      {"name": "한강", "rules": [{"filter": {"search": "\"漢江\" OR \"ハンガン\""}}]},
-      {"name": "강남", "rules": [{"filter": {"search": "\"江南\" OR \"カンナム\""}}]},
-      {"name": "광장시장", "rules": [{"filter": {"search": "\"広蔵市場\" OR \"クァンジャンシジャン\""}}]},
-      {"name": "홍대", "rules": [{"filter": {"search": "\"弘大\" OR \"ホンデ\""}}]},
-      {"name": "잠실", "rules": [{"filter": {"search": "\"蚕室\" OR \"チャムシル\""}}]},
-      {"name": "연남", "rules": [{"filter": {"search": "\"延南\" OR \"ヨンナム\""}}]},
-      {"name": "명동", "rules": [{"filter": {"search": "\"明洞\" OR \"ミョンドン\""}}]},
-      {"name": "이태원", "rules": [{"filter": {"search": "\"梨泰院\" OR \"イテウォン\""}}]},
-      {"name": "압구정", "rules": [{"filter": {"search": "\"狎鴎亭\" OR \"アックジョン\""}}]},
-      {"name": "을지로", "rules": [{"filter": {"search": "\"乙支路\" OR \"ウルチロ\""}}]}
+      {"name": "성수", "rules": [{"filter": {"search": "'성수' OR 'ソンス'"}}]},
+      {"name": "인사동", "rules": [{"filter": {"search": "'仁寺洞' OR 'インサドン'"}}]},
+      {"name": "스타필드", "rules": [{"filter": {"search": "'スターフィールド' OR 'Starfield'"}}]},
+      {"name": "익선", "rules": [{"filter": {"search": "'益善' OR 'イクソン'"}}]},
+      {"name": "북촌 서촌", "rules": [{"filter": {"search": "'北村' OR '西村' OR 'プッチョン' OR 'ソチョン'"}}]},
+      {"name": "동대문 DDP", "rules": [{"filter": {"search": "'東대문' OR 'トンデムン' OR 'DDP' OR 'ディーディーピー'"}}]},
+      {"name": "서울숲", "rules": [{"filter": {"search": "'ソ우ルの森' OR 'ソウルスプ'"}}]},
+      {"name": "남산", "rules": [{"filter": {"search": "'南山' OR 'ナムサン'"}}]},
+      {"name": "한강", "rules": [{"filter": {"search": "'漢江' OR 'ハンガン'"}}]},
+      {"name": "강남", "rules": [{"filter": {"search": "'江南' OR 'カンナム'"}}]},
+      {"name": "광장시장", "rules": [{"filter": {"search": "'広蔵市場' OR 'クァンジャン시ジャン'"}}]},
+      {"name": "홍대", "rules": [{"filter": {"search": "'弘大' OR 'ホン데'"}}]},
+      {"name": "잠실", "rules": [{"filter": {"search": "'蚕室' OR 'チャムシル'"}}]},
+      {"name": "연남", "rules": [{"filter": {"search": "'延南' OR 'ヨンナム'"}}]},
+      {"name": "명동", "rules": [{"filter": {"search": "'明洞' OR 'ミョンドン'"}}]},
+      {"name": "이태원", "rules": [{"filter": {"search": "'梨泰院' OR 'イテウォン'"}}]},
+      {"name": "압구정", "rules": [{"filter": {"search": "'狎鴎亭' OR 'アックジョン'"}}]},
+      {"name": "을지로", "rules": [{"filter": {"search": "'乙支路' OR 'ウルチロ'"}}]}
     ]
   },
   {
-    "category": "(13) 부산 주요 지역",
+    "category": "(분석용) 부산 주요 지역",
     "items": [
-      {"name": "해운대", "rules": [{"filter": {"search": "\"海雲台\" OR \"ヘウンデ\""}}]},
-      {"name": "전포", "rules": [{"filter": {"search": "\"田浦\" OR \"ジョン포\""}}]},
-      {"name": "광안리", "rules": [{"filter": {"search": "\"広安里\" OR \"クァンアンリ\""}}]},
-      {"name": "감천", "rules": [{"filter": {"search": "\"甘川\" OR \"カムチョン\""}}]},
-      {"name": "서면", "rules": [{"filter": {"search": "\"西面\" OR \"ソミョン\""}}]},
-      {"name": "자갈치", "rules": [{"filter": {"search": "\"チャガルチ\" OR \"Jagalchi\""}}]},
-      {"name": "BIFF", "rules": [{"filter": {"search": "\"BIFF\" OR \"ビフ\" OR \"釜山国際映画祭\""}}]},
-      {"name": "기장", "rules": [{"filter": {"search": "\"機張\" OR \"キジャン\""}}]},
-      {"name": "센텀시티", "rules": [{"filter": {"search": "\"センタムシティ\" OR \"Centum City\""}}]},
-      {"name": "남포동", "rules": [{"filter": {"search": "\"南浦洞\" OR \"ナンポドン\""}}]},
-      {"name": "영도", "rules": [{"filter": {"search": "\"影島\" OR \"ヨンド\""}}]}
+      {"name": "해운대", "rules": [{"filter": {"search": "'海雲台' OR 'ヘウンデ'"}}]},
+      {"name": "전포", "rules": [{"filter": {"search": "'田浦' OR 'ジョン포'"}}]},
+      {"name": "광안리", "rules": [{"filter": {"search": "'広安里' OR 'クァンアンリ'"}}]},
+      {"name": "감천", "rules": [{"filter": {"search": "'甘川' OR 'カムチョン'"}}]},
+      {"name": "서면", "rules": [{"filter": {"search": "'西面' OR 'ソミョン'"}}]},
+      {"name": "자갈치", "rules": [{"filter": {"search": "'チャガルチ' OR 'Jagalchi'"}}]},
+      {"name": "BIFF", "rules": [{"filter": {"search": "'BIFF' OR 'ビフ' OR '釜山国際映画祭'"}}]},
+      {"name": "기장", "rules": [{"filter": {"search": "'機張' OR 'キジャン'"}}]},
+      {"name": "센텀시티", "rules": [{"filter": {"search": "'센타무시티' OR 'Centum City'"}}]},
+      {"name": "남포동", "rules": [{"filter": {"search": "'南浦洞' OR 'ナンポドン'"}}]},
+      {"name": "영도", "rules": [{"filter": {"search": "'影島' OR 'ヨンド'"}}]}
     ]
   },
   {
-    "category": "(14) 기타 주요 도시",
+    "category": "(분석용) 기타 주요 도시",
     "items": [
-      {"name": "경주", "rules": [{"filter": {"search": "\"慶州\" OR \"キョンジュ\""}}]},
-      {"name": "수원", "rules": [{"filter": {"search": "\"水原\" OR \"スウォン\""}}]},
-      {"name": "전주", "rules": [{"filter": {"search": "\"全州\" OR \"チョンジュ\""}}]},
-      {"name": "제주", "rules": [{"filter": {"search": "\"済州\" OR \"チェジュ\""}}]},
-      {"name": "속초", "rules": [{"filter": {"search": "\"束草\" OR \"ソクチョ\""}}]}
+      {"name": "경주", "rules": [{"filter": {"search": "'慶州' OR 'キョン주'"}}]},
+      {"name": "수원", "rules": [{"filter": {"search": "'水原' OR 'スウォン'"}}]},
+      {"name": "전주", "rules": [{"filter": {"search": "'全州' OR 'チョンジュ'"}}]},
+      {"name": "제주", "rules": [{"filter": {"search": "'済州' OR 'チェジュ'"}}]},
+      {"name": "속초", "rules": [{"filter": {"search": "'束草' OR 'ソクチョ'"}}]}
     ]
+  },
+  {
+    "category": "(분석용) 주요 한국 지역",
+    "items": [
+      {"name": "경주", "rules": [{"filter": {"search": "'慶州' OR 'キョンジュ'"}}]},
+      {"name": "부산", "rules": [{"filter": {"search": "'釜山' OR 'プサン'"}}]},
+      {"name": "수원", "rules": [{"filter": {"search": "'水原' OR 'スウォン'"}}]},
+      {"name": "서울", "rules": [{"filter": {"search": "'ソウル' OR 'SEOUL'"}}]},
+      {"name": "전주", "rules": [{"filter": {"search": "'全州' OR 'チョンジュ'"}}]},
+      {"name": "제주", "rules": [{"filter": {"search": "'済州' OR 'チェジュ' OR '済州島'"}}]},
+      {"name": "속초", "rules": [{"filter": {"search": "'束草' OR 'ソクチョ'"}}]}
+      ]
   }
 ]
 
