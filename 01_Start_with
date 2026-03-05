@@ -1,0 +1,27 @@
+#초기에 불러오기
+import os
+from dotenv import load_dotenv
+import json
+import logging
+import datetime
+from pprint import pprint
+
+from bcr_api.bwproject import BWProject, BWUser
+from bcr_api.bwresources import (
+    BWQueries, BWGroups, BWAuthorLists, BWSiteLists, 
+    BWLocationLists, BWTags, BWCategories, BWRules, 
+    BWMentions, BWSignals
+)
+
+#로그 기록기 on
+load_dotenv()
+
+USERNAME = os.getenv("BW_USERNAME")
+PASSWORD = os.getenv("BW_PASSWORD")
+PROJECT_NAME = os.getenv("BW_PROJECT")
+
+print(f"ID: {USERNAME}")
+print(f"PW: {PASSWORD}")
+
+logger = logging.getLogger("bcr_api")
+logger.setLevel(logging.DEBUG)
