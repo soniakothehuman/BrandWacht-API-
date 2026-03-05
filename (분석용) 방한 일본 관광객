@@ -132,3 +132,33 @@ location_category_data = [
 #등록
 for data in bulk_category_data:
     categories.upload_rule_categories(**data)
+
+#또는 안전한 호출을 위해 아래의 것으로 활용
+mport time
+
+# 1. API 호출을 위한 루프 시작
+for cat_group in location_category_data:
+    category_name = cat_group["category"]
+    items = cat_group["items"]
+    
+    print(f"--- 카테고리: {category_name} 등록 시작 ---")
+    
+    for item in items:
+        name = item["name"]
+        rules = item["rules"]
+        
+        try:
+            # 여기에 실제 카테고리를 생성/업로드하는 함수를 넣습니다.
+            # 예: categories.create(category=category_name, name=name, rules=rules)
+            print(f"업로드 중: {category_name} > {name}")
+            
+            # API 호출이 성공했다고 가정하고 20초간 대기합니다.
+            # 10분(600초) / 30회 = 회당 20초 지연 시 제한에 걸리지 않습니다.
+            time.sleep(10)
+            
+        except Exception as e:
+            print(f"오류 발생 ({name}): {e}")
+            # 오류 발생 시 잠시 대기 후 다음 항목으로 진행하거나 중단할 수 있습니다.
+            time.sleep(5) 
+
+print("모든 지역 카테고리 등록이 완료되었습니다.")
