@@ -15,7 +15,7 @@ bulk_category_data = [
         "category": "(02) 정보/이동",
         "items": [
             {"name": "네이버 지도", "rules": [{"filter": {"search": '"ネイバーマップ" OR "Naver Map"'}}]},
-            {"name": "카카오택시", "rules": [{"filter": {"search": '"カ카オタクシー" OR "配車アプリ"'}}]},
+            {"name": "카카오택시", "rules": [{"filter": {"search": '"カカオタクシー" OR "配車アプリ"'}}]},
             {"name": "eSIM/Wi-Fi", "rules": [{"filter": {"search": '"eSIM" OR "Wi-Fi弁当" OR "ポケットWi-Fi"'}}]}
         ]
     },
@@ -82,7 +82,7 @@ bulk_category_data = [
             {"name": "피부과", "rules": [{"filter": {"search": '"皮膚科" OR "ポテンツァ" OR "リジュラン"'}}]},
             {"name": "미용외과", "rules": [{"filter": {"search": '"美容外科" OR "整形"'}}]},
             {"name": "피부 진단/퍼스널 컬러", "rules": [{"filter": {"search": '"肌診断" OR "パーソナルカラー" OR "肌測定"'}}]},
-            {"name": "치아 미백", "rules": [{"filter": {"search": '"ホワイト닝"'}}]}
+            {"name": "치아 미백", "rules": [{"filter": {"search": '"ホワイトニング"'}}]}
         ]
     },
     {
