@@ -188,10 +188,10 @@ location_category_data = [
 #등록
 import time
 
-# 1. API 호출 간격 설정 (Rate Limit 방지를 위해 최소 21초 권장)
-CALL_INTERVAL = 21 
+# 1. API 호출 간격 설정 (Rate Limit 방지를 위해 최소 300초 (5분) 권장)
+CALL_INTERVAL = 300 
 
-print("--- 대공의 명에 따라 데이터 전송을 시작합니다. ---")
+print("--- 데이터 전송을 시작합니다. ---")
 
 for data in location_category_data:
     try:
