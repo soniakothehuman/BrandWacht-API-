@@ -8,7 +8,7 @@ bulk_category_data = [
         "items": [
             {"name": "와우패스", "rules": [{"filter": {"search": '"WOWPASS" OR "ワウパス"'}}]},
             {"name": "나마네카드", "rules": [{"filter": {"search": '"NAMANE" OR "ナマネカード"'}}]},
-            {"name": "트래블로그", "rules": [{"filter": {"search": '"トラベルログ" OR "TravelLog"'}}]}
+            {"name": "트래블로그", "rules": [{"filter": {"search": '"トラベルログ" OR "TravelLog"'}}]} #
         ]
     },
     {
@@ -46,8 +46,13 @@ bulk_category_data = [
         "category": "(06) 패션 브랜드",
         "items": [
             {"name": "무신사", "rules": [{"filter": {"search": '"ムシンサ" OR "MUSINSA"'}}]},
-            {"name": "마르디 메크르디", "rules": [{"filter": {"search": '"マルディメクル디" OR "Mardi Mercredi"'}}]}
-        ]
+            {"name": "마르디 메크르디", "rules": [{"filter": {"search": '("Mardi Mercredi" OR "マルディメクルディ")'}}]}, 
+            {"name": "블루엘리펀트", "rules": [{"filter": {"search": '("Blue Elephant" OR "ブルーエレファント")'}}]}, #
+            {"name": "마틴킴", "rules": [{"filter": {"search": '("Matin Kim" OR "マーティンキム")'}}]}, #
+            {"name": "아더에러", "rules": [{"filter": {"search": '("Ader Error" OR "アーダーエラー")'}}]}, #
+            {"name": "젠틀몬스터", "rules": [{"filter": {"search": '("Gentle Monster" OR "ジェントルモンスター")'}}]}, #
+            {"name": "탬버린즈", "rules": [{"filter": {"search": '("Tamburins" OR "タンバリンズ")'}}]} #
+    ] 
     },
     {
         "category": "(07) 구체적 메뉴",
@@ -113,7 +118,9 @@ bulk_category_data = [
         "items": [
             {"name": "한복 체험", "rules": [{"filter": {"search": '"韓服" OR "チマチョゴリ"'}}]},
             {"name": "전통시장", "rules": [{"filter": {"search": '"伝統市場" OR "広蔵市場"'}}]},
-            {"name": "박물관/전시관", "rules": [{"filter": {"search": '"博物館" OR "美術館" OR "展示会"'}}]}
+            {"name": "박물관", "rules": [{"filter": {"search": '"博物館"'}}]}, #
+            {"name": "미술관", "rules": [{"filter": {"search": '"美術館" '}}]}, #
+            {"name": "전시관", "rules": [{"filter": {"search": '"展示会"'}}]}   #                    
         ]
     }
 ]
@@ -123,18 +130,18 @@ location_category_data = [
   {
     "category": "(분석용) 서울 주요 지역",
     "items": [
-      {"name": "성수", "rules": [{"filter": {"search": "'성수' OR 'ソンス'"}}]},
+      {"name": "성수", "rules": [{"filter": {"search": "'聖水' OR 'ソンス'"}}]},#
       {"name": "인사동", "rules": [{"filter": {"search": "'仁寺洞' OR 'インサドン'"}}]},
       {"name": "스타필드", "rules": [{"filter": {"search": "'スターフィールド' OR 'Starfield'"}}]},
       {"name": "익선", "rules": [{"filter": {"search": "'益善' OR 'イクソン'"}}]},
       {"name": "북촌 서촌", "rules": [{"filter": {"search": "'北村' OR '西村' OR 'プッチョン' OR 'ソチョン'"}}]},
-      {"name": "동대문 DDP", "rules": [{"filter": {"search": "'東대문' OR 'トンデムン' OR 'DDP' OR 'ディーディーピー'"}}]},
-      {"name": "서울숲", "rules": [{"filter": {"search": "'ソ우ルの森' OR 'ソウルスプ'"}}]},
+      {"name": "동대문 DDP", "rules": [{"filter": {"search": "'東大門' OR 'トンデムン' OR 'DDP' OR 'ディーディーピー'"}}]},#
+      {"name": "서울숲", "rules": [{"filter": {"search": "'ソウルの森' OR 'ソウルスプ'"}}]},#
       {"name": "남산", "rules": [{"filter": {"search": "'南山' OR 'ナムサン'"}}]},
       {"name": "한강", "rules": [{"filter": {"search": "'漢江' OR 'ハンガン'"}}]},
       {"name": "강남", "rules": [{"filter": {"search": "'江南' OR 'カンナム'"}}]},
       {"name": "광장시장", "rules": [{"filter": {"search": "'広蔵市場' OR 'クァンジャン시ジャン'"}}]},
-      {"name": "홍대", "rules": [{"filter": {"search": "'弘大' OR 'ホン데'"}}]},
+      {"name": "홍대", "rules": [{"filter": {"search": "'弘大' OR 'ホンデ'"}}]},#
       {"name": "잠실", "rules": [{"filter": {"search": "'蚕室' OR 'チャムシル'"}}]},
       {"name": "연남", "rules": [{"filter": {"search": "'延南' OR 'ヨンナム'"}}]},
       {"name": "명동", "rules": [{"filter": {"search": "'明洞' OR 'ミョンドン'"}}]},
@@ -147,14 +154,14 @@ location_category_data = [
     "category": "(분석용) 부산 주요 지역",
     "items": [
       {"name": "해운대", "rules": [{"filter": {"search": "'海雲台' OR 'ヘウンデ'"}}]},
-      {"name": "전포", "rules": [{"filter": {"search": "'田浦' OR 'ジョン포'"}}]},
+      {"name": "전포", "rules": [{"filter": {"search": "'田浦' OR 'ジョンポ'"}}]}, #
       {"name": "광안리", "rules": [{"filter": {"search": "'広安里' OR 'クァンアンリ'"}}]},
       {"name": "감천", "rules": [{"filter": {"search": "'甘川' OR 'カムチョン'"}}]},
       {"name": "서면", "rules": [{"filter": {"search": "'西面' OR 'ソミョン'"}}]},
       {"name": "자갈치", "rules": [{"filter": {"search": "'チャガルチ' OR 'Jagalchi'"}}]},
-      {"name": "BIFF", "rules": [{"filter": {"search": "'BIFF' OR 'ビフ' OR '釜山国際映画祭'"}}]},
+      {"name": "BIFF", "rules": [{"filter": {"search": "'BIFF' OR biff OR '釜山国際映画祭') NOT (ビブグルマン OR ビフォア"}}]},#
       {"name": "기장", "rules": [{"filter": {"search": "'機張' OR 'キジャン'"}}]},
-      {"name": "센텀시티", "rules": [{"filter": {"search": "'센타무시티' OR 'Centum City'"}}]},
+      {"name": "센텀시티", "rules": [{"filter": {"search": "'センタムシティ' OR 'Centum City'"}}]},#
       {"name": "남포동", "rules": [{"filter": {"search": "'南浦洞' OR 'ナンポドン'"}}]},
       {"name": "영도", "rules": [{"filter": {"search": "'影島' OR 'ヨンド'"}}]}
     ]
@@ -172,7 +179,6 @@ location_category_data = [
       ]
   }
 ]
-
 
 
 #등록
@@ -199,3 +205,67 @@ for data in location_category_data:
 
 # 작업 완료 후 로컬 캐시를 최신화하기 위해 reload 호출 (라이브러리 내부에서 자동 실행됨) [cite: 526, 543]
 print("--- 모든 공정이 완료되었습니다. ---")
+
+
+
+#카테고리 내 아이템별 추출
+
+# --- [설정] ---
+BATCH_INDEX = 0  # 총 46개 작업(23개 항목)이므로 0번(1~30회), 1번(31~46회)으로 나눠 실행
+CALLS_PER_BATCH = 30
+TARGET_QUERY_ID = 2003263471
+OUTPUT_FILE = "bw_comparison_cleaned.csv"
+
+# 1. 수집 및 복구 대상 리스트 (패션 브랜드 + 수정 지명 + 부산~속초 누락분)
+remedy_item_names = [
+    "트래블로그", "블루엘리펀트", "마틴킴", "아더에러", "젠틀몬스터", "탬버린즈",
+    "박물관", "미술관", "전시관", "성수", "동대문 DDP", "서울숲", "홍대", "전포", "BIFF", "센텀시티",
+    "부산", "수원", "경주", "서울", "전주", "제주", "속초"
+]
+
+periods = [
+    ("2024-03-01T00:00:00", "2024-12-31T23:59:59", "2024_Total(Mar-Dec)"),
+    ("2025-03-01T00:00:00", "2025-12-31T23:59:59", "2025_Total(Mar-Dec)")
+]
+
+# 2. 작업 리스트 생성 (사용자가 수정한 rules를 그대로 사용)
+all_remedy_tasks = []
+combined_data = bulk_category_data + location_category_data
+
+for cat_group in combined_data:
+    for item in cat_group["items"]:
+        if item["name"] in remedy_item_names:
+            for start, end, label in periods:
+                all_remedy_tasks.append({
+                    "category": cat_group["category"],
+                    "item_name": item["name"],
+                    "search_query": item["rules"][0]["filter"]["search"],
+                    "start": start,
+                    "end": end,
+                    "label": label
+                })
+
+# 3. 현재 배치 추출
+start_idx = BATCH_INDEX * CALLS_PER_BATCH
+current_batch = all_remedy_tasks[start_idx : start_idx + CALLS_PER_BATCH]
+
+for task in current_batch:
+    try:
+        count = queries_api.num_mentions(
+            name=TARGET_QUERY_ID, 
+            startDate=task["start"], 
+            endDate=task["end"], 
+            search=task["search_query"]
+        )
+        
+        # 실시간 추가 저장
+        new_row = pd.DataFrame([[task["category"], task["item_name"], task["label"], count]])
+        new_row.to_csv(OUTPUT_FILE, mode='a', header=False, index=False, encoding='utf-8-sig')
+        
+        print(f"성공: {task['item_name']} ({task['label']}) -> {count}")
+        time.sleep(20) 
+        
+    except Exception as e:
+        print(f"오류: {task['item_name']} -> {e}")
+
+print(f"--- 배치 {BATCH_INDEX} 완료 ---")
