@@ -160,16 +160,6 @@ location_category_data = [
     ]
   },
   {
-    "category": "(분석용) 기타 주요 도시",
-    "items": [
-      {"name": "경주", "rules": [{"filter": {"search": "'慶州' OR 'キョン주'"}}]},
-      {"name": "수원", "rules": [{"filter": {"search": "'水原' OR 'スウォン'"}}]},
-      {"name": "전주", "rules": [{"filter": {"search": "'全州' OR 'チョンジュ'"}}]},
-      {"name": "제주", "rules": [{"filter": {"search": "'済州' OR 'チェジュ'"}}]},
-      {"name": "속초", "rules": [{"filter": {"search": "'束草' OR 'ソクチョ'"}}]}
-    ]
-  },
-  {
     "category": "(분석용) 주요 한국 지역",
     "items": [
       {"name": "경주", "rules": [{"filter": {"search": "'慶州' OR 'キョンジュ'"}}]},
