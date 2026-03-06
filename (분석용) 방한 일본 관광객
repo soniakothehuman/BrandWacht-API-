@@ -60,18 +60,35 @@ bulk_category_data = [
             {"name": "간장게장", "rules": [{"filter": {"search": '"カンジャンケジャン"'}}]},
             {"name": "닭한마리", "rules": [{"filter": {"search": '"タッカンマリ"'}}]},
             {"name": "삼겹살", "rules": [{"filter": {"search": '"サムギョプサル"'}}]},
-            {"name": "신라면", "rules": [{"filter": {"search": '"辛ラーメン"'}}]},
-            {"name": "불닭볶음면", "rules": [{"filter": {"search": '"ブルダック" OR "プルダック"'}}]},
-            {"name": "참깨라면", "rules": [{"filter": {"search": '"ごまラーメン"'}}]},
-            {"name": "미역라면", "rules": [{"filter": {"search": '"ワカメラーメン"'}}]}
-        ]
+            {"name": "육회", "rules": [{"filter": {"search": '"ユッケ"'}}]},
+            {"name": "설렁탕", "rules": [{"filter": {"search": '"ソルロンタン"'}}]},
+            {"name": "곰탕", "rules": [{"filter": {"search": '"コムタン"'}}]},
+            {"name": "닭갈비", "rules": [{"filter": {"search": '"タッカルビ"'}}]},
+            {"name": "순두부찌개", "rules": [{"filter": {"search": '"スンドゥブ" OR "スンドゥブチゲ"'}}]},
+            {"name": "낙곱새", "rules": [{"filter": {"search": '"ナッコプセ"'}}]},
+            {"name": "핫도그", "rules": [{"filter": {"search": '"ハットグ"'}}]},
+            {"name": "호떡", "rules": [{"filter": {"search": '"ホットク"'}}]},
+            {"name": "붕어빵", "rules": [{"filter": {"search": '"プンオパン"'}}]},
+            {"name": "베이글", "rules": [{"filter": {"search": '"ベーグル"'}}]},
+            {"name": "소금빵", "rules": [{"filter": {"search": '"ソグムパン"'}}]},
+            {"name": "두바이초콜릿모찌", "rules": [{"filter": {"search": '"ドバイチョコレート餅" OR "ドバイチョコ大福"'}}]}
+    ]
     },
     {
         "category": "(08) 인스턴트/가공식품",
         "items": [
             {"name": "비요뜨", "rules": [{"filter": {"search": '"ビヨット"'}}]},
             {"name": "라면", "rules": [{"filter": {"search": '"韓国ラーメン" OR "辛ラーメン" OR "ブルダック"'}}]},
-            {"name": "HBAF/김", "rules": [{"filter": {"search": '"HBAF" OR "アーモンド" OR "韓国海苔"'}}]}
+            {"name": "HBAF", "rules": [{"filter": {"search": '"HBAF" OR "アーモンド"'}}]},
+            {"name": "김", "rules": [{"filter": {"search": '"韓国海苔" OR "のりスナック"'}}]},
+            {"name": "바나나 우유", "rules": [{"filter": {"search": '"バナナ牛乳" OR "バナナウユ"'}}]},
+            {"name": "참깨라면", "rules": [{"filter": {"search": '"ごまラーメン" OR "チャムケラーメン"'}}]},
+            {"name": "미역라면", "rules": [{"filter": {"search": '"ワカメラーメン" OR "わかめラーメン"'}}]},
+            {"name": "비쵸비", "rules": [{"filter": {"search": '"ビチョビ"'}}]},
+            {"name": "약과", "rules": [{"filter": {"search": '"ヤックァ" OR "薬菓"'}}]},
+            {"name": "제로슈거 음료", "rules": [{"filter": {"search": '"ゼロシュガー" OR "韓国ゼロ飲料"'}}]},
+            {"name": "쫀득초코칩", "rules": [{"filter": {"search": '"チョンドゥクチョコチップ" OR "もちチョコチップ"'}}]},
+            {"name": "링티", "rules": [{"filter": {"search": '"リンティー" OR "Lingtea"'}}]}
         ]
     },
     {
@@ -171,7 +188,7 @@ location_category_data = [
     "items": [
       {"name": "경주", "rules": [{"filter": {"search": "'慶州' OR 'キョンジュ'"}}]},
       {"name": "부산", "rules": [{"filter": {"search": "'釜山' OR 'プサン'"}}]},
-      {"name": "수원", "rules": [{"filter": {"search": "'水原' OR 'スウォン'"}}]},
+      {"name": "수원", "rules": [{"filter": {"search": "'スウォン'"}}]},
       {"name": "서울", "rules": [{"filter": {"search": "'ソウル' OR 'SEOUL'"}}]},
       {"name": "전주", "rules": [{"filter": {"search": "'全州' OR 'チョンジュ'"}}]},
       {"name": "제주", "rules": [{"filter": {"search": "'済州' OR 'チェジュ' OR '済州島'"}}]},
