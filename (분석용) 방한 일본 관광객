@@ -71,7 +71,18 @@ bulk_category_data = [
             {"name": "붕어빵", "rules": [{"filter": {"search": '"プンオパン"'}}]},
             {"name": "베이글", "rules": [{"filter": {"search": '"ベーグル"'}}]},
             {"name": "소금빵", "rules": [{"filter": {"search": '"ソグムパン"'}}]},
-            {"name": "두바이초콜릿모찌", "rules": [{"filter": {"search": '"ドバイチョコレート餅" OR "ドバイチョコ大福"'}}]}
+            {"name": "두바이초콜릿모찌", "rules": [{"filter": {"search": '"ドバイチョコレート" AND ("餅" OR "もち" OR "モッチ")'}}]},
+            {"name": "치킨", "rules": [{"filter": {"search": '"チキン"'}}]},
+            {"name": "곰탕", "rules": [{"filter": {"search": '"コムタン"'}}]},
+            {"name": "갈비탕", "rules": [{"filter": {"search": '"カルビタン"'}}]},
+            {"name": "해장국", "rules": [{"filter": {"search": '"ヘジャンク"'}}]},
+            {"name": "짜장면", "rules": [{"filter": {"search": '"ジャジャン麺" OR "チャジャンミョン"'}}]},
+            {"name": "냉면", "rules": [{"filter": {"search": '"冷麺"'}}]},
+            {"name": "부대찌개", "rules": [{"filter": {"search": '"プデチゲ"'}}]},
+            {"name": "떡볶이", "rules": [{"filter": {"search": '"トッポギ"'}}]},
+            {"name": "낙지", "rules": [{"filter": {"search": ""ナクチ" OR "テナガダコ""}}]},
+            {"name": "산낙지", "rules": [{"filter": {"search": ""サンナクチ" OR "生テナガダコ""}}]},
+            {"name": "꽈배기", "rules": [{"filter": {"search": ""クァベギ" OR "ねじり揚げパン""}}]}
     ]
     },
     {
@@ -139,7 +150,30 @@ bulk_category_data = [
             {"name": "미술관", "rules": [{"filter": {"search": '"美術館" '}}]}, #
             {"name": "전시관", "rules": [{"filter": {"search": '"展示会"'}}]}   #                    
         ]
-    }
+    },
+            {
+            "category": "(15) 라면 브랜드",
+            "items": [
+            {"name": "신라면", "rules": [{"filter": {"search": '"辛ラーメン"'}}]},
+            {"name": "신라면 골드", "rules": [{"filter": {"search": '"辛ラーメンゴールド" OR "辛ゴールド"'}}]},
+            {"name": "진라면", "rules": [{"filter": {"search": '"ジンラーメン"'}}]},
+            {"name": "짜파게티", "rules": [{"filter": {"search": '"チャパゲティ"'}}]},
+            {"name": "부대찌개라면", "rules": [{"filter": {"search": '"プデチゲラーメン"'}}]},
+            {"name": "김치찌개라면", "rules": [{"filter": {"search": '"キム치チゲラーメン"'}}]},
+            {"name": "오징어짬뽕", "rules": [{"filter": {"search": '"イカチャンポン"'}}]},
+            {"name": "스낵면", "rules": [{"filter": {"search": '"スナック麺"'}}]},
+            {"name": "사리곰탕", "rules": [{"filter": {"search": '"サリコムタン" OR "サリゴムタン"'}}]},
+            {"name": "치즈불닭볶음면", "rules": [{"filter": {"search": '"チーズブルダック" OR "チーズ炒め麺"'}}]},
+            {"name": "까르보불닭볶음면", "rules": [{"filter": {"search": '"カルボブルダック"'}}]},
+            {"name": "불닭볶음면", "rules": [{"filter": {"search": '"ブルダック"'}}]},
+            {"name": "너구리", "rules": [{"filter": {"search": '"ノグリ" OR "ノグリラーメン"'}}]},
+            {"name": "무파마", "rules": [{"filter": {"search": '"ムパマ" OR "ムパマ湯面"'}}]},
+            {"name": "비빔면", "rules": [{"filter": {"search": '"ビビン麺" OR "パルドビビン"'}}]},
+            {"name": "참깨라면", "rules": [{"filter": {"search": '"チャムケラーメン" OR "胡麻ラーメン"'}}]},
+            {"name": "신라면 툼바", "rules": [{"filter": {"search": '"辛ラーメントゥンバ" OR "トゥンバ"OR "トゥーンバ"'}}]},
+            {"name": "틈새라면", "rules": [{"filter": {"search": '"トゥムセラーメン"'}}]}
+            ]
+        }
 ]
 
 #02 위치
